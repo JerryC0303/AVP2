@@ -13,10 +13,10 @@ import os
 #from itertools import product
 
 # Load the trained model
-#loaded_model = joblib.load("z_random_forest_model_202310_10_3.pkl")
-current_directory = os.path.dirname(os.path.realpath(__file__))
-model_path = os.path.join(current_directory, "z_random_forest_model_202310_10_3.pkl")
-loaded_model = joblib.load(model_path)
+loaded_model = joblib.load("z_random_forest_model_202310_10_3.pkl")
+#current_directory = os.path.dirname(os.path.realpath(__file__))
+#model_path = os.path.join(current_directory, "z_random_forest_model_202310_10_3.pkl")
+#loaded_model = joblib.load(model_path)
 # Function to make predictions
 def make_predictions(data):
     predictions = loaded_model.predict(data)
